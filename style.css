@@ -72,12 +72,6 @@ variables are available to be used anywhere in our html document
 }
 
 
-.team-description {
-    background-color: beige;
-    /* TODO: style the blurb with padding */
-    padding: 0.5em;
-}
-
 .our-clients-title {
     /* TODO: style the 'Our Clients' text font */
     background-color: #D1C6AD;
@@ -88,14 +82,10 @@ variables are available to be used anywhere in our html document
     border-radius: 0.5em;
 }
 
-.section-header {
-    background-color: var(--color5);
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */
+.client-icon {
+    width: 100%;
 }
-
-.content-card {
-    background-color: var(--color2);
-}
-
 
 /* now we create names for the grid areas for specific elements */
 #banner {
@@ -103,7 +93,6 @@ variables are available to be used anywhere in our html document
     grid-area: ban;
 
 }
-
 
 #teamMemberCard1 {
 
@@ -125,9 +114,6 @@ variables are available to be used anywhere in our html document
 #teamDescription {
     grid-area: td1;
 }
-
-/* Use a 12 column flexible layout grid */
-/* For vertical layout we use a margin, rather than grid-rows */
 
 #ourClientsTitle {
     /* TODO: give the grid-area a name */
@@ -211,7 +197,7 @@ media queries for progressively bigger screen widths
     
 
 
-@media (min-width: 32em) and (max-resolution: 200dpi) {
+@media (min-width: 50em) {
     .main-container {
         /* TODO: setup the grid-template for tablet layout */
         grid-template:
@@ -233,7 +219,7 @@ media queries for progressively bigger screen widths
 
 
 
-@media (min-width: 50em) and (max-resolution: 200dpi) {
+@media (min-width: 75em) {
     .main-container {
         /* TODO: setup the grid-template for desktop layout */
         grid-template:
