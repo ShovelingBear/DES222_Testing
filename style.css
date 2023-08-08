@@ -5,22 +5,14 @@ This is applied to the 'root' psuedo-element, which just means that these color
 variables are available to be used anywhere in our html document
 */
 :root {
-    --color1: #FFCDB2;
-    --color2: #FFB4A2;
-    --color3: #E5989B;
-    --color4: #B5838D;
-    --color5: #6D6875;
     --white-font: #FFFFFF;
     --black-font: #000000;
-<<<<<<< Updated upstream
-=======
     --color5: #0B1D51;
     --color4: #797596;
     --color3: #A1869E;
     --color2: #BBADA0;
     --color1: #D1C6AD;
     /* add in other color variables for color pallete */
->>>>>>> Stashed changes
 }
 
 
@@ -28,46 +20,26 @@ variables are available to be used anywhere in our html document
 .main-container {
     max-width: 72em;
     margin: 0 auto;
-<<<<<<< Updated upstream
-    font: 1em Helvetica, arial, sans-serif;
-    color: var(--white-font);
-=======
     font-family: Inter;
     color: white;
     /* TODO: set the main font color */
->>>>>>> Stashed changes
 }
-
-
-.main-container > * {
-    min-height: 2em;
-}
-  
 
 /* Here we define the aspects of style of our elements other than their grid layout */
 
 .banner {
-<<<<<<< Updated upstream
-    background-color: var(--color4);
     min-height: 8em;
-=======
-    /* TODO: banner styling */
     background-color: #797596;
->>>>>>> Stashed changes
     padding: 1em;
 }
 
 .banner-title {
-<<<<<<< Updated upstream
-=======
     /* TODO: banner main title font styling */
->>>>>>> Stashed changes
     font-size: 3em;
 }
 
 .banner-subtitle {
-<<<<<<< Updated upstream
-    font-size: 2em;
+    font-size: 2.25em;
 }
 
 .team-member-card-panel {
@@ -84,11 +56,6 @@ variables are available to be used anywhere in our html document
     overflow: hidden;
 }
 
-=======
-    /* TODO: banner subtitle font styling */
-    font-size: 2.25em;
-}
-
 .team-member-card {
     /* TODO: style the card as a column based flexbox with rounded corners */
     background-color: #A1869E;
@@ -97,20 +64,17 @@ variables are available to be used anywhere in our html document
 }
 
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */
->>>>>>> Stashed changes
 .team-member-card-image {
     max-width: 100%;
 }
 
 .team-member-card-blurb {
-<<<<<<< Updated upstream
     padding: 0.5em;
 }
 
 
 .team-description {
     background-color: beige;
-=======
     /* TODO: style the blurb with padding */
     padding: 0.5em;
 }
@@ -123,7 +87,6 @@ variables are available to be used anywhere in our html document
     text-align: center;
     padding-top: 0.3em;
     border-radius: 0.5em;
->>>>>>> Stashed changes
 }
 
 .section-header {
@@ -137,33 +100,26 @@ variables are available to be used anywhere in our html document
 
 /* now we create names for the grid areas for specific elements */
 #banner {
-<<<<<<< Updated upstream
-    grid-area: bn1;
-=======
     /* TODO: give the grid-area a name */
     grid-area: ban;
->>>>>>> Stashed changes
+
 }
 
 
 #teamMemberCard1 {
-<<<<<<< Updated upstream
-=======
+
     /* TODO: give the grid-area a name */
->>>>>>> Stashed changes
     grid-area: tm1;
 }
 
 #teamMemberCard2 {
-<<<<<<< Updated upstream
-=======
+
     /* TODO: give the grid-area a name */
->>>>>>> Stashed changes
     grid-area: tm2;
 }
 
 #teamMemberCard3 {
-<<<<<<< Updated upstream
+
     grid-area: tm3;
 }
 
@@ -190,10 +146,6 @@ variables are available to be used anywhere in our html document
 
 /* Use a 12 column flexible layout grid */
 /* For vertical layout we use a margin, rather than grid-rows */
-=======
-    /* TODO: give the grid-area a name */
-    grid-area: tm3;
-}
 
 #ourClientsTitle {
     /* TODO: give the grid-area a name */
@@ -241,7 +193,6 @@ variables are available to be used anywhere in our html document
 }
 
 /* Use a flexible layout grid */
->>>>>>> Stashed changes
 .main-container {
     display: grid;
     /* grid-template-columns: repeat(12, [col-start] 1fr); */
@@ -256,26 +207,7 @@ Because this CSS definition comes first, it will apply by default. Then we overr
 media queries for progressively bigger screen widths
 */
 .main-container {
-<<<<<<< Updated upstream
     grid-template:
-        "bn1 bn1 bn1 bn1" minmax(8em, auto)
-        " .   .   .   . " minmax(2em, auto)
-        "tm1 tm1 tm1 tm1" minmax(32em, auto)
-        " .   .   .   . " minmax(2em, auto)
-        "tm2 tm2 tm2 tm2" minmax(32em, auto)
-        " .   .   .   . " minmax(2em, auto)
-        "tm3 tm3 tm3 tm3" minmax(32em, auto)
-        " .   .   .   . " minmax(2em, auto)
-        "td1 td1 td1 td1" minmax(14em, auto)
-        " .   .   .   . " minmax(2em, auto)
-        "sh1 sh1 sh1 sh1" minmax(8em, auto)
-        " .   .   .   . " minmax(2em, auto)
-        "sc1 sc1 sc1 sc1" minmax(68em, auto)
-        " .   .   .   . " minmax(2em, auto)
-        "sc2 sc2 sc2 sc2" minmax(68em, auto)
-        " .   .   .   . " minmax(2em, auto)
-        "sc3 sc3 sc3 sc3" minmax(68em, auto)
-=======
     /* TODO: setup the grid-template for mobile phone layout */
     grid-template:
         "ban ban ban ban" minmax(8em, auto)
@@ -293,31 +225,12 @@ media queries for progressively bigger screen widths
         "ci5 ci5 ci6 ci6" minmax(8em, auto)
         "ci7 ci7 ci8 ci8" minmax(8em, auto)
         " .   .   .   . " minmax(2em, auto)
->>>>>>> Stashed changes
 }
     
 
 
 @media (min-width: 32em) and (max-resolution: 200dpi) {
     .main-container {
-<<<<<<< Updated upstream
-        grid-template:
-        "bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1" minmax(8em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2" minmax(32em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)
-        " .   .  tm3 tm3 tm3 tm3  .   . " minmax(32em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "td1 td1 td1 td1 td1 td1 td1 td1" minmax(14em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "sh1 sh1 sh1 sh1 sh1 sh1 sh1 sh1" minmax(8em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1" minmax(68em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "sc2 sc2 sc2 sc2 sc2 sc2 sc2 sc2" minmax(68em, auto)
-        " .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "sc3 sc3 sc3 sc3 sc3 sc3 sc3 sc3" minmax(68em, auto)   
-=======
         /* TODO: setup the grid-template for tablet layout */
         grid-template:
             "ban ban ban ban ban ban ban ban" minmax(8em, auto)
@@ -333,7 +246,6 @@ media queries for progressively bigger screen widths
             "ci5 ci5 ci5 ci5 ci6 ci6 ci6 ci6" minmax(16em, auto)
             "ci7 ci7 ci7 ci7 ci8 ci8 ci8 ci8" minmax(16em, auto)
             " .   .   .   .   .   .   .   . " minmax(2em, auto)
->>>>>>> Stashed changes
     }
 }
 
@@ -341,22 +253,6 @@ media queries for progressively bigger screen widths
 
 @media (min-width: 50em) and (max-resolution: 200dpi) {
     .main-container {
-<<<<<<< Updated upstream
-        grid-template:
-        "bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1 bn1" minmax(8em, auto)
-        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2 tm3 tm3 tm3 tm3" minmax(32em, auto)
-        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "td1 td1 td1 td1 td1 td1 td1 td1 td1 td1 td1 td1" minmax(14em, auto)
-        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "sh1 sh1 sh1 sh1 sh1 sh1 sh1 sh1 sh1 sh1 sh1 sh1" minmax(8em, auto)
-        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1 sc1" minmax(68em, auto)
-        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "sc2 sc2 sc2 sc2 sc2 sc2 sc2 sc2 sc2 sc2 sc2 sc2" minmax(68em, auto)
-        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "sc3 sc3 sc3 sc3 sc3 sc3 sc3 sc3 sc3 sc3 sc3 sc3" minmax(68em, auto)   
-=======
         /* TODO: setup the grid-template for desktop layout */
         grid-template:
             "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(8em, auto)
@@ -368,7 +264,7 @@ media queries for progressively bigger screen widths
             "ci1 ci1 ci1 ci2 ci2 ci2 ci3 ci3 ci3 ci4 ci4 ci4" minmax(16em, auto)
             " .   .   .   .   .   .   .   .   .   .   .   . " minmax(1em, auto)
             "ci5 ci5 ci5 ci6 ci6 ci6 ci7 ci7 ci7 ci8 ci8 ci8" minmax(16em, auto)
->>>>>>> Stashed changes
+
     }
 }
 
