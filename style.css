@@ -49,7 +49,6 @@ variables are available to be used anywhere in our html document
 .team-member-card {
     /* max-width: 32em; */
     min-height: 32em;
-    background-color: var(--color3);
     display: flex;
     flex-direction: column;
     border-radius: 1em;
