@@ -127,23 +127,6 @@ variables are available to be used anywhere in our html document
     grid-area: td1;
 }
 
-#storiesSectionHeader {
-    grid-area: sh1;
-}
-
-#storyCard1 {
-    grid-area: sc1;
-}
-
-#storyCard2 {
-    grid-area: sc2;
-}
-
-#storyCard3 {
-    grid-area: sc3;
-}
-
-
 /* Use a 12 column flexible layout grid */
 /* For vertical layout we use a margin, rather than grid-rows */
 
